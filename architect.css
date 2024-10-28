@@ -1,0 +1,209 @@
+header{
+    background-color: bisque;
+    padding: 30px 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav >ul{
+    display: flex;
+    
+    list-style: none;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    margin-right: 30px;
+    
+}
+.banner{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.banner-pic{
+    width: 100%;
+}
+.button-primary{
+    padding: 15px;
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* মেইন সেকশন শুরু */
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.teams-contrainer{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+.Features{
+    color: tomato;
+    font-size: 3rem;
+}
+
+.Features-card-discription{
+    color: gray;
+}
+.Features-card{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px greenyellow;
+}
+
+.new-card-section{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+    
+    
+}
+.section-pic{
+    margin-top: 80px;
+    margin-bottom: 0;
+    height: 100%;
+    width: 500px;
+    margin-left: 50px;
+    
+}
+.Features-tittle{
+    font-size: 2rem;
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+
+.ten-years-card{
+    background-color: orange;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-card-tittle{
+    font-size: 3rem;
+    margin: 0;
+}
+.ten-years-card-para{
+    font-size: 2rem;
+}
+.some-facts-container{
+    margin-top: 100px;
+    
+}
+
+.some-facts-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.card{
+    text-align: center;
+    border: 1px solid gold;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sponsors-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.sponsors-div img{
+   padding: 20px;
+}
+
+footer{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color:bisque;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    border: 1px solid bisque;
+    
+}
+
+/* রেসপন্সিভ স্টাইলস  for small device screen*/
+@media screen and (max-width: 576px) {
+
+    nav, .teams-contrainer{
+       flex-direction: column;   
+    }
+    .banner .banner-discription{
+       text-align: justify;
+        
+    }
+    .teams{
+        grid-template-columns: 1fr;
+    }
+    .quick-list button{
+       margin-left: 9rem;
+}
+
+    .new-card-section{ 
+        flex-direction: column; 
+
+}
+.section-pic{
+    width: 100%;
+    margin-left: 0;
+
+}
+.ten-years-card{
+    position: static;
+}
+.some-facts-cards{
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+footer{
+    text-align: center;
+}
+}
+
+/* রেসপন্সিভ স্টাইলস  for medium device screen*/
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    nav, .teams-contrainer, .new-card-section{
+        flex-direction: column;   
+     }
+    .quick-list{
+        text-align: center;
+    }
+    .sponsors-div img{
+        display: flex;
+        margin: 0 auto;
+     }
+}
